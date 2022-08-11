@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora_simples</title>
+    <script type="text/javascript" src="calc.js"></script>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    
+    
+    <div class="container">
+        
+        <h2 align="center">Simple Calculator v1.0</h2>
+        
+        <input type="number" id="v1" value="valor 1" >
+        
+        <input type="number" id="v2" value="valor 2" >
+        
+        
+       <div class="botoes">
+            <input type="button"  value="Somar" onclick="calcular('+')">
+            <input type="button"  value="Subtrair" onclick="calcular('-')">
+            <input type="button"  value="Multiplicar" onclick="calcular('*')">
+            <input type="button"  value="Dividir" onclick="calcular('/')">
+       </div>
+        
+        <input type="text" id="res" value="" placeholder="Result" readonly>
+        
+    </div><!--fim da div principal-->
+</body>
+
+</html>
