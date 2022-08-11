@@ -1,12 +1,12 @@
 /*function somar() {
-    rest.value = parseFloat(v1.value) + parseFloat(v2.value);
+    res.value = parseFloat(v1.value) + parseFloat(v2.value);
     
 }
 function subtrair (){
-    rest.value = parseFloat(v1.value) - parseFloat(v2.value);
+    res.value = parseFloat(v1.value) - parseFloat(v2.value);
 }
 function multiplicar(){
-    rest.value = parseFloat(v1.value) * parseFloat(v2.value);
+    res.value = parseFloat(v1.value) * parseFloat(v2.value);
 }*/
 
 
