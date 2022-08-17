@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculadora_simples</title>
     <script type="text/javascript" src="calc.js"></script>
-    <link rel="stylesheet" href="calc1.css">
+    <link rel="stylesheet" href="calc.css">
 </head>
 
 <body>
@@ -21,13 +21,22 @@
         <input type="text" id="v2" value="0" placeholder="0"><br>
         
         Operação:
-       <div class="botoes">
+        <select id="op">
+            <option value="">(Escolha uma Operação)</option>
+            <option value="+">Somar</option>
+            <option value="-">Subtrair</option>
+            <option value="*">Multiplicar</option>
+            <option value="/">Dividir</option>
+        </select>
+       <!--<div class="botoes">
+
             <input type="radio"  id="somar" name="op" checked>Somar
             <input type="radio"  id="subtrair" name="op" >Subtrair
             <input type="radio"  id="multiplicar" name="op">Multiplicar
             <input type="radio"  id="dividir" name="op">Dividir
-       </div>
-        <input type="button" value="Executar" onclick="calcular()"><br>
+       </div>-->
+        <input type="button" id ="exec" value="Executar" onclick="calcular()"><br>
+        Resultado:
         <input type="text" id="res" value="" placeholder="Result" readonly>
         
     </div><!--fim da div principal-->

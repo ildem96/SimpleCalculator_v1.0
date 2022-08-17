@@ -10,7 +10,7 @@ function multiplicar(){
 }*/
 
 
-function calcular(){
+/*function calcular(){
     
     if (somar.checked === true)
         
@@ -35,4 +35,26 @@ function calcular(){
         else
             res.value = parseFloat(v1.value)/parseFloat(v2.value);
     }
+}*/
+
+// - caixa de seleção js - //
+
+function calcular(){
+    if (op.value === '+')
+       res.value = parseFloat(v1.value) + parseFloat(v2.value);
+
+   else if(op.value === '-')
+           res.value = parseFloat(v1.value) - parseFloat(v2.value);
+
+   else if(op.value === '*')
+   res.value = parseFloat(v1.value) * parseFloat(v2.value);
+
+   else if(op.value === '/')
+        if (parseFloat(v2.value)=== 0 )
+            res.value = 'Erro!digite um número diferente de 0';
+        else
+            res.value = parseFloat(v1.value)/parseFloat(v2.value);
+    else
+        alert('Escolha a operação desejada!');
 }
+
